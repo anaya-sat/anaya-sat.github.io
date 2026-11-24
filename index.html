@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anaya Satavalekar | Engineering Portfolio</title>
+
+    <style>
+        /* GENERAL STYLING */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111318;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            border-bottom: 1px solid #292d35;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #b5b5b5;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #65b6e8;
+        }
+
+        /* HERO SECTION */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 12%;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 7vw, 75px);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #65b6e8;
+        }
+
+        .hero p {
+            color: #a9adb5;
+            max-width: 600px;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #65b6e8;
+            color: #111318;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        /* GENERAL SECTIONS */
+
+        section {
+            padding: 90px 12%;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .section-title span {
+            color: #65b6e8;
+        }
+
+        .description {
+            color: #b5b5b5;
+            max-width: 750px;
+        }
+
+        /* EXPERIENCE AND PROJECTS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
+            gap: 20px;
+        }
+
+        .card {
+            background: #1b1f27;
+            border: 1px solid #303640;
+            padding: 25px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #65b6e8;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #65b6e8;
+        }
+
+        .card p {
+            color: #b5b5b5;
+            font-size: 15px;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #1b1f27;
+            border: 1px solid #303640;
+            padding: 10px 18px;
+            border-radius: 5px;
+            color: #c8cbd1;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #b5b5b5;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #292d35;
+            color: #777;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+
+        @media (max-width: 650px) {
+
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 65px 7%;
+            }
+
+            .hero {
+                padding: 70px 7%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <div class="logo">ANAYA.</div>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <header class="hero">
+
+        <p>MECHANICAL ENGINEERING STUDENT</p>
+
+        <h1>
+            Hello, I'm <span>Anaya.</span>
+        </h1>
+
+        <p>
+            I'm a Mechanical Engineering student passionate about
+            automotive engineering, mechanical design, robotics
+            and innovative engineering solutions.
+        </p>
+
+        <div>
+            <a href="#projects" class="button">
+                Explore My Work
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About <span>Me</span>
+        </h2>
+
+        <p class="description">
+            I am a Mechanical Engineering student at the University
+            of Calgary with a strong interest in automotive and
+            vehicle engineering.
+
+            Through academic projects and industry experience,
+            I have developed an interest in mechanical design,
+            manufacturing, engineering analysis and problem-solving.
+
+            I enjoy turning engineering concepts into practical,
+            functional systems.
+        </p>
+
+    </section>
+
+
+    <!-- EXPERIENCE SECTION -->
+
+    <section id="experience">
+
+        <h2 class="section-title">
+            Work <span>Experience</span>
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Cummins</h3>
+                <p>Application Engineering Intern</p>
+                <p>
+                    Worked on engine applications and engineering
+                    design for industrial applications.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>CNRL</h3>
+                <p>Site Engineering Mechanical Intern</p>
+                <p>
+                    Worked on mechanical engineering design,
+                    piping analysis and structural stability
+                    at the Horizon Oil Sands site.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+            My <span>Projects</span>
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Solar Car</h3>
+                <p>
+                    Mechanical and electrical integration
+                    involving solar vehicle battery systems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>MIND Bionic Arm</h3>
+                <p>
+                    Development of a robotic assistive arm
+                    incorporating mechanical and electronic systems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Voice-Controlled Robotic Hand</h3>
+                <p>
+                    Arduino-based robotic hand using servo motors
+                    and voice recognition technology.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Mechanical Design Projects</h3>
+                <p>
+                    CAD modelling, mechanical assemblies
+                    and engineering design concepts.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+            Technical <span>Skills</span>
+        </h2>
+
+        <div class="skills">
+
+            <div class="skill">Mechanical Design</div>
+            <div class="skill">CAD Modelling</div>
+            <div class="skill">Fusion 360</div>
+            <div class="skill">Engineering Analysis</div>
+            <div class="skill">Arduino</div>
+            <div class="skill">Robotics</div>
+            <div class="skill">Technical Drawings</div>
+            <div class="skill">Problem Solving</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">
+            Let's <span>Connect</span>
+        </h2>
+
+        <p>
+            Interested in collaborating or discussing
+            engineering opportunities? Get in touch.
+        </p>
+
+        <a href="mailto:YOUR_EMAIL@gmail.com" class="button">
+            Contact Me
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Anaya Satavalekar | Engineering Portfolio
+    </footer>
+
+
+</body>
+</html>
